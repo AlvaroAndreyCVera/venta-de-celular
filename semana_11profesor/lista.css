@@ -1,0 +1,127 @@
+/*Paso 1: Quitar viñetas*/
+ul{
+    
+    list-style-type: none;
+}
+
+/*Paso 2: Quitar margin y padding*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Paso 3: Aplicar formato al menú principal*/
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color:rgb(249, 239, 239);
+    padding: 10px 15px;
+    display: block;
+    border-radius: 10px;
+
+}
+
+/*Paso 4: Acomodar el menú principal de forma vertical*/
+.menuprincipal{
+    float: left;
+}
+
+/*Paso 5: Aplicar formato a la barra de menú*/
+nav{
+
+    width: 400px;
+    height: 60px;
+    margin: auto;
+    font-size: 20px;
+}
+
+/*Paso 6: Aplicar efecto usando hover*/
+nav a:hover{
+
+    background-color: rgb(247, 228, 228);
+}
+
+/*Paso 7: Ocultar los submenú y ajustar la posición(absoluta) y modificaremos el ancho mínimo*/
+nav li ul{
+    position: absolute;
+    min-width: 140px;
+    display: none; /*ocultar*/
+}
+
+/*Paso 8: Visualizar nuestro submenú*/
+nav li:hover >ul{
+    display: block;
+}
+h1{
+    background-color: rgb(183, 214, 241);
+}
+
+.celular1{
+    margin-top:  10px; ;
+    margin-left: 2.5%;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+
+}
+.celular2{
+    margin-top:  10px; ;
+    margin-left: 2.5%;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+}
+.celular3{
+    margin-top:  10px; ;
+    margin-left: 2.5%;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+   
+}
+.celular4{
+    margin-top:  10px; ;
+    margin-left: 2.5%;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+   
+}
+p{
+    background-color: white;
+}
+b{
+    background-color: rgb(252, 246, 246);
+}
+
+.contenedor{
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+
+   animation-name: celular;
+   animation-duration: 5s;
+   animation-iteration-count:infinite;
+}
+
+@keyframes celular {
+    0%{opacity: 0; transform: translateY(10%);} 
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
